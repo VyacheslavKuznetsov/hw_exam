@@ -1,0 +1,398 @@
+<!DOCTYPE html><html><head>
+      <title>README</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\Kuzne\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.5.22\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <style>
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}
+
+/* highlight */
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+pre[data-line] .line-highlight-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+}
+
+pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: hsla(24, 20%, 50%,.08);
+  background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+pre[data-line] .line-highlight:before, 
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  background-color: hsla(24, 20%, 50%,.4);
+  color: hsl(24, 20%, 95%);
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview  ">
+      <h1 class="mume-header" id="%D0%BA%D0%BB%D0%B0%D1%81%D1%81%D0%BE%D0%B2%D1%8B%D0%B9-%D0%B6%D0%B8%D0%B7%D0%BD%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9-%D1%86%D0%B8%D0%BA%D0%BB">&#x41A;&#x43B;&#x430;&#x441;&#x441;&#x43E;&#x432;&#x44B;&#x439; &#x436;&#x438;&#x437;&#x43D;&#x435;&#x43D;&#x43D;&#x44B;&#x439; &#x446;&#x438;&#x43A;&#x43B;</h1>
+
+<h3 class="mume-header" id="%D0%BC%D0%BE%D0%BD%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5">&#x41C;&#x43E;&#x43D;&#x442;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x43D;&#x438;&#x435;</h3>
+
+<p><!--?xml version="1.0" encoding="UTF-8" standalone="no"?--><svg xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" contentscripttype="application/ecmascript" contentstyletype="text/css" height="392px" preserveAspectRatio="none" style="width:243px;height:392px;" version="1.1" viewBox="0 0 243 392" width="243px" zoomAndPan="magnify"><defs><filter height="300%" id="f1ly58a47ibo2x" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[178d54d189f08210b2f549b07cb743fc]
+entity constructor--><rect fill="#FEFECE" filter="url(#f1ly58a47ibo2x)" height="47.6094" style="stroke:#A80036;stroke-width:1.5;" width="121" x="57.5" y="7"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="158.5" y="12"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="156.5" y="14"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="156.5" y="18"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="81" x="72.5" y="41.5332">constructor()</text><!--MD5=[5f0179f861bee4533c78bfc117cd222d]
+entity componentDidMount--><rect fill="#FEFECE" filter="url(#f1ly58a47ibo2x)" height="47.6094" style="stroke:#A80036;stroke-width:1.5;" width="180" x="28" y="331"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="188" y="336"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="186" y="338"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="186" y="342"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="140" x="43" y="365.5332">componentDidMount()</text><!--MD5=[d7f2f6ad28bb07bd4fc74aae6945b46c]
+entity getDerivedStateFromProps--><rect fill="#FEFECE" filter="url(#f1ly58a47ibo2x)" height="47.6094" style="stroke:#A80036;stroke-width:1.5;" width="222" x="7" y="115"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="209" y="120"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="207" y="122"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="207" y="126"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="182" x="22" y="149.5332">getDerivedStateFromProps()</text><!--MD5=[7b81b3f54888d80991adc2e216cc97b2]
+entity render--><rect fill="#FEFECE" filter="url(#f1ly58a47ibo2x)" height="47.6094" style="stroke:#A80036;stroke-width:1.5;" width="92" x="72" y="223"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="144" y="228"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="142" y="230"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="142" y="234"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="52" x="87" y="257.5332">render()</text><!--MD5=[680b456df48eedcd28c85af776d4cd3c]
+link constructor to getDerivedStateFromProps--><path d="M118,55 C118,71 118,92.45 118,109.53 " fill="none" id="constructor-to-getDerivedStateFromProps" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="118,114.68,122,105.68,118,109.68,114,105.68,118,114.68" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[f2fa28a26a07fa2b836694bf840120af]
+link getDerivedStateFromProps to render--><path d="M118,163 C118,179 118,200.45 118,217.53 " fill="none" id="getDerivedStateFromProps-to-render" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="118,222.68,122,213.68,118,217.68,114,213.68,118,222.68" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[7974421d8c183de412e663aa3338db93]
+link render to componentDidMount--><path d="M118,271 C118,287 118,308.45 118,325.53 " fill="none" id="render-to-componentDidMount" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="118,330.68,122,321.68,118,325.68,114,321.68,118,330.68" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[ec4e4553035e8f88c37a9e1f63e8ed27]
+@startuml
+
+component "constructor()" as constructor
+component "componentDidMount()" as componentDidMount
+component "getDerivedStateFromProps()" as getDerivedStateFromProps
+component "render()" as render
+
+constructor - -> getDerivedStateFromProps
+getDerivedStateFromProps - -> render
+render - -> componentDidMount
+
+@enduml
+
+PlantUML version 1.2020.26(Mon Dec 21 22:45:07 YEKT 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: ru
+Country: RU
+--></g></svg></p><h3 class="mume-header" id="%D0%BE%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5">&#x41E;&#x431;&#x43D;&#x43E;&#x432;&#x43B;&#x435;&#x43D;&#x438;&#x435;</h3>
+
+<p><!--?xml version="1.0" encoding="UTF-8" standalone="no"?--><svg xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" contentscripttype="application/ecmascript" contentstyletype="text/css" height="716px" preserveAspectRatio="none" style="width:426px;height:716px;" version="1.1" viewBox="0 0 426 716" width="426px" zoomAndPan="magnify"><defs><filter height="300%" id="f1nrossczld0aj" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[4757f2fa42bc25bc86fbcce62ae18aba]
+entity forceUpdate--><rect fill="#FEFECE" filter="url(#f1nrossczld0aj)" height="47.6094" style="stroke:#A80036;stroke-width:1.5;" width="127" x="28" y="115"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="135" y="120"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="133" y="122"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="133" y="126"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="87" x="43" y="149.5332">forceUpdate()</text><!--MD5=[15b2de61c16501c8f1271adafb2dfff2]
+entity setState--><rect fill="#FEFECE" filter="url(#f1nrossczld0aj)" height="47.6094" style="stroke:#A80036;stroke-width:1.5;" width="102" x="250.5" y="7"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="332.5" y="12"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="330.5" y="14"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="330.5" y="18"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="62" x="265.5" y="41.5332">setState()</text><!--MD5=[81b61498cb6ea54d918e2d402fc4cc67]
+entity componentDidUpdate--><rect fill="#FEFECE" filter="url(#f1nrossczld0aj)" height="47.6094" style="stroke:#A80036;stroke-width:1.5;" width="186" x="30.5" y="547"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="196.5" y="552"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="194.5" y="554"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="194.5" y="558"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="146" x="45.5" y="581.5332">componentDidUpdate()</text><!--MD5=[d7f2f6ad28bb07bd4fc74aae6945b46c]
+entity getDerivedStateFromProps--><rect fill="#FEFECE" filter="url(#f1nrossczld0aj)" height="47.6094" style="stroke:#A80036;stroke-width:1.5;" width="222" x="190.5" y="115"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="392.5" y="120"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="390.5" y="122"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="390.5" y="126"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="182" x="205.5" y="149.5332">getDerivedStateFromProps()</text><!--MD5=[be2fd76ed11c0b913c1d22b10f1c4b35]
+entity shouldComponentUpdate--><rect fill="#FEFECE" filter="url(#f1nrossczld0aj)" height="47.6094" style="stroke:#A80036;stroke-width:1.5;" width="210" x="91.5" y="223"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="281.5" y="228"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="279.5" y="230"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="279.5" y="234"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="170" x="106.5" y="257.5332">shouldComponentUpdate()</text><!--MD5=[7b81b3f54888d80991adc2e216cc97b2]
+entity render--><rect fill="#FEFECE" filter="url(#f1nrossczld0aj)" height="47.6094" style="stroke:#A80036;stroke-width:1.5;" width="92" x="101.5" y="331"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="173.5" y="336"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="171.5" y="338"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="171.5" y="342"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="52" x="116.5" y="365.5332">render()</text><!--MD5=[183a67dd5fd91427d6771f9aef904dac]
+entity getSnapshotBeforeUpdate--><rect fill="#FEFECE" filter="url(#f1nrossczld0aj)" height="47.6094" style="stroke:#A80036;stroke-width:1.5;" width="217" x="7" y="439"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="204" y="444"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="202" y="446"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="202" y="450"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="177" x="22" y="473.5332">getSnapshotBeforeUpdate()</text><!--MD5=[22efa60cf2b4332bf8574b0c93969d71]
+entity end--><rect fill="#FEFECE" filter="url(#f1nrossczld0aj)" height="47.6094" style="stroke:#A80036;stroke-width:1.5;" width="64" x="164.5" y="655"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="208.5" y="660"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="206.5" y="662"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="206.5" y="666"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="24" x="179.5" y="689.5332">end</text><!--MD5=[c57d56d269887b39545bed1aa2d1a245]
+link forceUpdate to shouldComponentUpdate--><path d="M114.28,163 C130.54,179.42 152.48,201.56 169.6,218.84 " fill="none" id="forceUpdate-to-shouldComponentUpdate" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="173.4,222.68,169.883,213.4805,169.8716,219.1373,164.2148,219.1259,173.4,222.68" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[6dad59ce39a8f2893b79dc3c5b257a1f]
+link setState to getDerivedStateFromProps--><path d="M301.5,55 C301.5,71 301.5,92.45 301.5,109.53 " fill="none" id="setState-to-getDerivedStateFromProps" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="301.5,114.68,305.5,105.68,301.5,109.68,297.5,105.68,301.5,114.68" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[c96f186d25f63a9402e19c79d9596381]
+link getDerivedStateFromProps to shouldComponentUpdate--><path d="M278.72,163 C262.46,179.42 240.52,201.56 223.4,218.84 " fill="none" id="getDerivedStateFromProps-to-shouldComponentUpdate" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="219.6,222.68,228.7852,219.1259,223.1284,219.1373,223.117,213.4805,219.6,222.68" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[27c1f9085d14b45fe48ca8428b93bfa2]
+link shouldComponentUpdate to render--><path d="M185.87,271 C178.41,287.14 168.39,308.82 160.46,325.97 " fill="none" id="shouldComponentUpdate-to-render" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="158.28,330.68,165.6704,324.1698,160.3662,326.136,158.4,320.8319,158.28,330.68" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[a04df5c319cea35cd66f9b2d65d311a9]
+link shouldComponentUpdate to end--><path d="M204.58,271.12 C223.06,327.41 264.58,475.71 234.5,595 C229.65,614.22 220.47,634.47 212.35,650.15 " fill="none" id="shouldComponentUpdate-to-end" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="209.87,654.87,217.599,648.7656,212.197,650.4445,210.5181,645.0425,209.87,654.87" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[47d934595a18d122fd784bde236e66cd]
+link render to getSnapshotBeforeUpdate--><path d="M140.56,379 C135.73,395 129.25,416.45 124.1,433.53 " fill="none" id="render-to-getSnapshotBeforeUpdate" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="122.54,438.68,128.9677,431.2177,123.9833,433.8928,121.3082,428.9085,122.54,438.68" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[b11d341ac7c3186d2f1eaca83d883274]
+link getSnapshotBeforeUpdate to componentDidUpdate--><path d="M117.24,487 C118.44,503 120.06,524.45 121.35,541.53 " fill="none" id="getSnapshotBeforeUpdate-to-componentDidUpdate" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="121.74,546.68,125.0603,537.4077,121.3685,541.6938,117.0824,538.002,121.74,546.68" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[4ddbf81558c1a919e377a2cbd2ec35b7]
+link componentDidUpdate to end--><path d="M139.34,595 C150.55,611.28 165.64,633.19 177.5,650.41 " fill="none" id="componentDidUpdate-to-end" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="180.44,654.68,178.6374,644.9975,177.6074,650.5598,172.0451,649.5297,180.44,654.68" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[1ad282e412007927a47066fc4926cf7f]
+@startuml
+
+component "forceUpdate()" as forceUpdate
+component "setState()" as setState
+component "componentDidUpdate()" as componentDidUpdate
+component "getDerivedStateFromProps()" as getDerivedStateFromProps
+component "shouldComponentUpdate()" as shouldComponentUpdate
+component "render()" as render
+component "getSnapshotBeforeUpdate()" as getSnapshotBeforeUpdate
+component "end" as end
+
+forceUpdate - -> shouldComponentUpdate
+setState - -> getDerivedStateFromProps
+getDerivedStateFromProps - -> shouldComponentUpdate
+shouldComponentUpdate - -> render
+shouldComponentUpdate - -> end
+render - -> getSnapshotBeforeUpdate
+getSnapshotBeforeUpdate - -> componentDidUpdate
+componentDidUpdate - -> end
+
+@enduml
+
+PlantUML version 1.2020.26(Mon Dec 21 22:45:07 YEKT 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: ru
+Country: RU
+--></g></svg></p><h3 class="mume-header" id="%D1%80%D0%B0%D0%B7%D0%BC%D0%BE%D0%BD%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5">&#x420;&#x430;&#x437;&#x43C;&#x43E;&#x43D;&#x442;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x43D;&#x438;&#x435;</h3>
+
+<p><!--?xml version="1.0" encoding="UTF-8" standalone="no"?--><svg xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" contentscripttype="application/ecmascript" contentstyletype="text/css" height="68px" preserveAspectRatio="none" style="width:219px;height:68px;" version="1.1" viewBox="0 0 219 68" width="219px" zoomAndPan="magnify"><defs><filter height="300%" id="f1dz6o6lnkidlx" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[69c02168816bf4a2d7e97271f6d8d7e5]
+entity componentWillUnmount--><rect fill="#FEFECE" filter="url(#f1dz6o6lnkidlx)" height="47.6094" style="stroke:#A80036;stroke-width:1.5;" width="198" x="7" y="7"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="185" y="12"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="183" y="14"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="183" y="18"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="158" x="22" y="41.5332">componentWillUnmount()</text><!--MD5=[ab9430f381635cbc3c196266ad9d58b5]
+@startuml
+
+component "componentWillUnmount()" as componentWillUnmount
+
+@enduml
+
+PlantUML version 1.2020.26(Mon Dec 21 22:45:07 YEKT 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: ru
+Country: RU
+--></g></svg></p><h3 class="mume-header" id="%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0-%D0%BE%D1%88%D0%B8%D0%B1%D0%BE%D0%BA">&#x41E;&#x431;&#x440;&#x430;&#x431;&#x43E;&#x442;&#x43A;&#x430; &#x43E;&#x448;&#x438;&#x431;&#x43E;&#x43A;</h3>
+
+<p><!--?xml version="1.0" encoding="UTF-8" standalone="no"?--><svg xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" contentscripttype="application/ecmascript" contentstyletype="text/css" height="176px" preserveAspectRatio="none" style="width:238px;height:176px;" version="1.1" viewBox="0 0 238 176" width="238px" zoomAndPan="magnify"><defs><filter height="300%" id="fkx7znl9hlkyp" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[5cf968463eb175e99a63dfcf26ff9c34]
+entity getDerivedStateFromError--><rect fill="#FEFECE" filter="url(#fkx7znl9hlkyp)" height="47.6094" style="stroke:#A80036;stroke-width:1.5;" width="217" x="7" y="7"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="204" y="12"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="202" y="14"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="202" y="18"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="177" x="22" y="41.5332">getDerivedStateFromError()</text><!--MD5=[111449e3cc24ca8e01937eacbd790d29]
+entity componentDidCatch--><rect fill="#FEFECE" filter="url(#fkx7znl9hlkyp)" height="47.6094" style="stroke:#A80036;stroke-width:1.5;" width="178" x="26.5" y="115"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="184.5" y="120"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="182.5" y="122"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="182.5" y="126"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="138" x="41.5" y="149.5332">componentDidCatch()</text><!--MD5=[08ef172d7c34c780ab7715f75d6094f9]
+link getDerivedStateFromError to componentDidCatch--><path d="M115.5,55 C115.5,71 115.5,92.45 115.5,109.53 " fill="none" id="getDerivedStateFromError-to-componentDidCatch" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="115.5,114.68,119.5,105.68,115.5,109.68,111.5,105.68,115.5,114.68" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[aa1edf9f1f5fc4a53886304b0f9e7c6b]
+@startuml
+
+component "getDerivedStateFromError()" as getDerivedStateFromError
+component "componentDidCatch()" as componentDidCatch
+
+getDerivedStateFromError - -> componentDidCatch
+
+@enduml
+
+PlantUML version 1.2020.26(Mon Dec 21 22:45:07 YEKT 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: ru
+Country: RU
+--></g></svg></p><h1 class="mume-header" id="%D0%B6%D0%B8%D0%B7%D0%BD%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9-%D1%86%D0%B8%D0%BA%D0%BB-%D1%85%D1%83%D0%BA%D0%BE%D0%B2">&#x416;&#x438;&#x437;&#x43D;&#x435;&#x43D;&#x43D;&#x44B;&#x439; &#x446;&#x438;&#x43A;&#x43B; &#x445;&#x443;&#x43A;&#x43E;&#x432;</h1>
+
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
