@@ -9,7 +9,8 @@ import {
 } from "@material-ui/core";
 import React, { useState } from "react";
 import { ConditionalRendering } from "./components/ConditionalRendering";
-import {ClassLifecycle, FuncLifecycle} from "./components/lifecycle";
+import { Keys } from "./components/keys";
+import { ClassLifecycle, FuncLifecycle } from "./components/lifecycle";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -56,22 +57,24 @@ function App() {
         <Tabs value={value} onChange={handleChange}>
           <Tab label="Жизненный цикл" {...a11yProps(0)} />
           <Tab label="Условный рендеринг" {...a11yProps(1)} />
-          <Tab label="Задание №3" {...a11yProps(2)} />
+          <Tab label="Списки и ключи" {...a11yProps(2)} />
         </Tabs>
       </AppBar>
 
       <TabPanel value={value} index={0}>
         <Paper elevation={5}>
-          <ClassLifecycle arg={77}/>
+          <ClassLifecycle arg={77} />
         </Paper>
         <Paper elevation={5}>
-          <FuncLifecycle arg={77}/>
+          <FuncLifecycle arg={77} />
         </Paper>
       </TabPanel>
       <TabPanel value={value} index={1}>
         <ConditionalRendering />
       </TabPanel>
-      <TabPanel value={value} index={2}></TabPanel>
+      <TabPanel value={value} index={2}>
+        <Keys />
+      </TabPanel>
     </div>
   );
 }
