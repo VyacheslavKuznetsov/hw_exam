@@ -8,6 +8,7 @@ import {
   Tabs,
 } from "@material-ui/core";
 import React, { useState } from "react";
+import { ConditionalRendering } from "./components/ConditionalRendering";
 import {ClassLifecycle, FuncLifecycle} from "./components/lifecycle";
 
 function TabPanel(props) {
@@ -54,7 +55,7 @@ function App() {
       <AppBar position="static">
         <Tabs value={value} onChange={handleChange}>
           <Tab label="Жизненный цикл" {...a11yProps(0)} />
-          <Tab label="Задание №2" {...a11yProps(1)} />
+          <Tab label="Условный рендеринг" {...a11yProps(1)} />
           <Tab label="Задание №3" {...a11yProps(2)} />
         </Tabs>
       </AppBar>
@@ -67,7 +68,9 @@ function App() {
           <FuncLifecycle arg={77}/>
         </Paper>
       </TabPanel>
-      <TabPanel value={value} index={1}></TabPanel>
+      <TabPanel value={value} index={1}>
+        <ConditionalRendering />
+      </TabPanel>
       <TabPanel value={value} index={2}></TabPanel>
     </div>
   );
