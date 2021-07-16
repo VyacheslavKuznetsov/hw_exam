@@ -67,3 +67,17 @@ getDerivedStateFromError --> componentDidCatch
 
 # Жизненный цикл хуков
 
+```plantuml
+@startuml
+
+component "FuncComponent()" as FuncComponent
+component "render" as render
+component "useEffect" as useEffect
+component "useLayoutEffect" as useLayoutEffect
+
+FuncComponent --> render
+render --> useEffect
+useEffect --> useLayoutEffect
+
+@enduml
+```
