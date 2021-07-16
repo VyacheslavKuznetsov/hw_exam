@@ -11,6 +11,7 @@ import React, { useState } from "react";
 import { ConditionalRendering } from "./components/ConditionalRendering";
 import { Keys } from "./components/keys";
 import { ClassLifecycle, FuncLifecycle } from "./components/lifecycle";
+import { LiftingStateUp } from "./components/LiftingStateUp";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -58,6 +59,7 @@ function App() {
           <Tab label="Жизненный цикл" {...a11yProps(0)} />
           <Tab label="Условный рендеринг" {...a11yProps(1)} />
           <Tab label="Списки и ключи" {...a11yProps(2)} />
+          <Tab label="Подъем состояния" {...a11yProps(3)} />
         </Tabs>
       </AppBar>
 
@@ -74,6 +76,9 @@ function App() {
       </TabPanel>
       <TabPanel value={value} index={2}>
         <Keys />
+      </TabPanel>
+      <TabPanel value={value} index={3}>
+        <LiftingStateUp />
       </TabPanel>
     </div>
   );
