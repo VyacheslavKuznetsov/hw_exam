@@ -12,6 +12,7 @@ import { ConditionalRendering } from "./components/ConditionalRendering";
 import { Keys } from "./components/keys";
 import { ClassLifecycle, FuncLifecycle } from "./components/lifecycle";
 import { LiftingStateUp } from "./components/LiftingStateUp";
+import { Routing } from "./components/Routing";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -60,6 +61,7 @@ function App() {
           <Tab label="Условный рендеринг" {...a11yProps(1)} />
           <Tab label="Списки и ключи" {...a11yProps(2)} />
           <Tab label="Подъем состояния" {...a11yProps(3)} />
+          <Tab label="Маршрутизация" {...a11yProps(4)} />
         </Tabs>
       </AppBar>
 
@@ -79,6 +81,9 @@ function App() {
       </TabPanel>
       <TabPanel value={value} index={3}>
         <LiftingStateUp />
+      </TabPanel>
+      <TabPanel value={value} index={4}>
+        <Routing />
       </TabPanel>
     </div>
   );
